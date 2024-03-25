@@ -1,10 +1,13 @@
 import React from 'react';
 import '../Styles/LoginForm.css';
+import Navbar from './Navbar';
 
 
 const Register = () => {
   return (
-    <div className='wrapper'>
+    <div>
+        <Navbar/>
+        <div className='wrapper'>
         <form action=''>
             <h1>Register</h1>
             <div className='input-box'>
@@ -50,6 +53,7 @@ const Register = () => {
                 <p>Already have an account?<a href='login'>Login</a></p>
             </div>
         </form>
+    </div>
     </div>
   )
 }
