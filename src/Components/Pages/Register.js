@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/LoginForm.css';
-import { FaUser, FaLock } from "react-icons/fa"
+
 
 const Register = () => {
   return (
@@ -10,10 +10,23 @@ const Register = () => {
             <div className='input-box'>
                 <input 
                     type='text'
-                    placeholder='Username'
+                    placeholder='Full Name'
                     required
                 />
-                <FaUser className='icon'/>
+            </div>
+            <div className='input-box'>
+                <input 
+                    type='text'
+                    placeholder='Phone Number'
+                    required
+                />
+            </div>
+            <div className='input-box'>
+                <input 
+                    type='email'
+                    placeholder='Email'
+                    required
+                />
             </div>
             <div className='input-box'>
                 <input
@@ -21,17 +34,20 @@ const Register = () => {
                     placeholder='Password'
                     required
                 />
-                <FaLock className='icon'/>
+            </div>
+            <div className='input-box'>
+                <input 
+                    type='password'
+                    placeholder='Confirm Password'
+                    required
+                />
             </div>
 
-            <div className='remember-forgot'>
-                <label><input type='checkbox'/>Remember me</label>
-                <a href='#'>Forgot Password?</a>
-            </div>
-            <button type='submit'>Login</button>
+            
+            <button type='submit'>Register</button>
 
             <div className='register-link'>
-                <p>Already have an account <a href='login'>Login</a></p>
+                <p>Already have an account?<a href='login'>Login</a></p>
             </div>
         </form>
     </div>
